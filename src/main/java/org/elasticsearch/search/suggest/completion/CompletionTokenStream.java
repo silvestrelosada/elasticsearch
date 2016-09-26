@@ -45,7 +45,7 @@ public final class CompletionTokenStream extends TokenStream {
     private Iterator<IntsRef> finiteStrings;
     private ToFiniteStrings toFiniteStrings;
     private int posInc = -1;
-    private static final int MAX_PATHS = 256;
+    private static final int MAX_PATHS = 2048;
     private CharTermAttribute charTermAttribute;
 
     public CompletionTokenStream(TokenStream input, BytesRef payload, ToFiniteStrings toFiniteStrings) throws IOException {
